@@ -1,0 +1,16 @@
+﻿<div style="text-align: center;">
+    <h1 style="font-size: 48px; margin-top: 20px;">STALCRAFT STORE</h1>
+    <h4 style="margin-top: 40px; margin-bottom: 100px;"><font face="Comic Sans MS">Этот сайт был сделан для продажи и покупки внутриигровых предметов посредством обмена с игроками в игре STALCRAFT.</font></h4>
+    
+    <div style="display: flex; margin-bottom: 160px; justify-content: space-around; margin-top: 40px;">
+        @for (int i = 1; i < 6; i++)
+        {
+            <div style="text-align: center;">
+                <img src="@ViewData[(i + 10).ToString()]" alt="@ViewData[i.ToString()]" style="width: 150px; height: 150px;">
+                <h3><font face="Comic Sans MS">@ViewData[i.ToString()]</font></h3>
+            </div>
+        }
+    </div>
+    <h6 style="text-align: left;"><font color="#FF0000" face="Comic Sans MS">ПРЕДУПРЕЖДЕНИЕ: Этот сайт не является официальным поставщиком компании ООО EXBO. При продаже и покупке вещей на этом сайте не гарантирует, что ваш аккаунт не забанят.</font></h6>
+</div>
+
